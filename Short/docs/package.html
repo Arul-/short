@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="style.css" type="text/css" media="screen"><link rel="stylesheet" href="print.css" type="text/css" media="print"><link rel="stylesheet" href="override.css" type="text/css"><title>Top Level Constants and Functions Details</title></head><body><script language="javascript" type="text/javascript" src="asdoc.js"></script><script language="javascript" type="text/javascript" src="help.js"></script><script language="javascript" type="text/javascript" src="cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Top Level Constants and Functions - Luracast Short';
+				var baseRef = '';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">Luracast Short - API Documentation</td><td class="titleTableTopNav" align="right"><a href="package-summary.html" onclick="loadClassListFrame('all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="class-summary.html" onclick="loadClassListFrame('all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="all-index-A.html" onclick="loadClassListFrame('index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="index.html?package.html&amp;class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">Top Level</td><td class="titleTableSubNav" id="subNav" align="right"><a href="package.html#methodSummary">Functions</a>&nbsp;| <a href="package.html#constantSummary">Constants</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Top Level"); titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,true	,false,true,false,false,false);}	
+				-->
+			</script><div class="MainContent"><br><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Global Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Function</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getURL()" class="signatureLink">getURL</a>(url:String, window:String = _blank, method:String = GET, params:Object = null):void</div><div class="summaryTableDescription">
+	 Loads a document from a specific URL into a window or passes variables to another application at a defined URL.</div></td><td class="summaryTableOwnerCol">Top&nbsp;Level</td></tr></table></div><br><br><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Global Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#_" class="signatureLink">_</a> : <a href="com/luracast/Short.html">Short</a><div class="summaryTableDescription">
+	 global instance of Short which makes it easy to access short from everywhere
+	 It requires "to" property to be set to an EventDispatcher.</div></td><td class="summaryTableOwnerCol">Top&nbsp;Level</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#$" class="signatureLink">$</a> : Function<div class="summaryTableDescription">
+	 global wrapper function for Short which makes it easy to access short from everywhere
+	 It will enable easy access methods for all events
+	 </div></td><td class="summaryTableOwnerCol">Top&nbsp;Level</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#_global" class="signatureLink">_global</a> : Object<div class="summaryTableDescription">
+	 A reference to the global object that can hold your variables that are needs to be accessed gloabally
+	 Unlike Timeline-declared or locally declared variables and functions, global variables and functions are visible to every Timeline and scope in the SWF file,
+	 
+	 NOTE When setting the value of a global variable, you must use the fully qualified name of the variable,
+	 e.g.</div></td><td class="summaryTableOwnerCol">Top&nbsp;Level</td></tr></table></div><div class="detailSectionHeader"> Constant Detail </div><a name="constantDetail"></a><a name="$"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">$</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public const $:Function</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Product Version :&nbsp;</b></td><td>Short 1.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>Flash Player  9, AIR 1.0</td></tr></table><p></p><p></p><p>
+	 global wrapper function for Short which makes it easy to access short from everywhere
+	 It will enable easy access methods for all events
+	 </p><br/><span class="label"> Example </span><br/><br/><div class="detailBody"> The following example uses <code>$(target)</code>with the root time line/document class
+ and listens to <code>MouseEvent.CLICK</code>
+<div class="listing"><pre>
+//write this on the main timeline
+$(this).onClick = function():void {
+    trace('click')
+}
+</pre></div><script language="javascript" type="text/javascript"><!-- AC_FL_RunContent( "src", "$Example1", "width", "100%",
+					"height","400px", "salign", "TL", "id", "example1", "quality", "high", "bgcolor", "", "name",
+						"example1", "flashvars","", "allowScriptAccess","sameDomain", "type",
+					"application/x-shockwave-flash","pluginspage", "http://www.macromedia.com/go/getflashplayer" ); --></script></div></div><a name="constantDetail"></a><a name="_"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">_</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public const _:<a href="com/luracast/Short.html">Short</a></code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Product Version :&nbsp;</b></td><td>Short 1.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>Flash Player  9, AIR 1.0</td></tr></table><p></p><p></p><p>
+	 global instance of Short which makes it easy to access short from everywhere
+	 It requires "to" property to be set to an EventDispatcher. Once set it will
+	 enable easy access methods for all events
+	 </p><br/><span class="label"> Example </span><br/><br/><div class="detailBody"> The following example ties <code>_</code>with the root time line/document class
+ and makes it available to every Timeline and scope in a SWF file,
+ and listens to <code>MouseEvent.CLICK</code> event
+<div class="listing"><pre>
+//write this on the main timeline
+_.to = this;
+//write the following anywhere
+_.onClick = function():void {
+    trace('click');
+}
+</pre></div><script language="javascript" type="text/javascript"><!-- AC_FL_RunContent( "src", "_Example1", "width", "100%",
+					"height","400px", "salign", "TL", "id", "example1", "quality", "high", "bgcolor", "", "name",
+						"example1", "flashvars","", "allowScriptAccess","sameDomain", "type",
+					"application/x-shockwave-flash","pluginspage", "http://www.macromedia.com/go/getflashplayer" ); --></script></div></div><a name="constantDetail"></a><a name="_global"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">_global</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public const _global:Object</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Product Version :&nbsp;</b></td><td>Short 1.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>Flash Player  9, AIR 1.0</td></tr></table><p></p><p></p><p>
+	 A reference to the global object that can hold your variables that are needs to be accessed gloabally
+	 Unlike Timeline-declared or locally declared variables and functions, global variables and functions are visible to every Timeline and scope in the SWF file,
+	 
+	 <p><b>NOTE</b> When setting the value of a global variable, you must use the fully qualified name of the variable,
+	 e.g. _global.variableName. Failure to do so will result in a compiler error</p>
+	 </p><br/><span class="label"> Example </span><br/><br/><div class="detailBody"> The following example creates a global function, <code>factorial()</code>, that is available to every Timeline and scope in a SWF file:
+<div class="listing"><pre>
+_global.factorial = function(n:Number) {
+    if(n &lt;= 1) {
+        return 1;
+    } 
+    else {
+        return n * factorial(n - 1);
+    }
+}
+
+trace(_global.factorial(1)); // 1
+trace(_global.factorial(2)); // 2
+trace(_global.factorial(3)); // 6
+trace(_global.factorial(4)); // 24
+</pre></div><script language="javascript" type="text/javascript"><!-- AC_FL_RunContent( "src", "_globalExample1", "width", "100%",
+					"height","400px", "salign", "TL", "id", "example1", "quality", "high", "bgcolor", "", "name",
+						"example1", "flashvars","", "allowScriptAccess","sameDomain", "type",
+					"application/x-shockwave-flash","pluginspage", "http://www.macromedia.com/go/getflashplayer" ); --></script></div><br/><div class="detailBody"> The following example shows how the failure to use the fully qualified variable name when setting the value of a global variable leads to unexpected results:
+<div class="listing"><pre>
+_global.myVar = "globalVariable";
+trace(_global.myVar); // globalVariable
+trace(myVar); //compiler error
+
+var myVar = "localVariable";
+trace(_global.myVar); // globalVariable
+trace(myVar); // localVariable
+</pre></div><script language="javascript" type="text/javascript"><!-- AC_FL_RunContent( "src", "_globalExample2", "width", "100%",
+					"height","400px", "salign", "TL", "id", "example2", "quality", "high", "bgcolor", "", "name",
+						"example2", "flashvars","", "allowScriptAccess","sameDomain", "type",
+					"application/x-shockwave-flash","pluginspage", "http://www.macromedia.com/go/getflashplayer" ); --></script></div></div><a name="methodDetail"></a><div class="detailSectionHeader"> Function detail </div><a name="getURL()"></a><a name="getURL(String,String,String,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getURL</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">function</td></tr></table><div class="detailBody"><code> public function getURL(url:String, window:String = _blank, method:String = GET, params:Object = null):void</code><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Product Version :&nbsp;</b></td><td>Short 1.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>Flash Player  9, AIR 1.0</td></tr></table><p></p><p></p><p>
+	 Loads a document from a specific URL into a window or passes variables to another application at a defined URL. Shorthand for navigateToURL.
+	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">url</span>:String</code> &mdash; The URL from which to obtain the document.
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">window</span>:String</code> (default = <code>_blank</code>)<code></code> &mdash; Specifies the window or HTML frame into which the document should load. You can enter the name of a specific window or
+	 select from the following reserved target names:
+	 <ul>
+	 <li><code>_self</code> specifies the current frame in the current window.</li>
+	 <li><code>_blank</code> specifies a new window.</li>
+	 <li><code>_parent</code> specifies the parent of the current frame.</li>
+	 <li><code>_top</code> specifies the top-level frame in the current window.</li>
+	 </ul>
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">method</span>:String</code> (default = <code>GET</code>)<code></code> &mdash; A <code>GET</code> or <code>POST</code> method for sending variables. If there are no variables, omit this parameter.
+	 The <code>GET</code> method appends the variables to the end of the URL, and is used for small numbers of variables.
+	 The <code>POST</code> method sends the variables in a separate HTTP header and is used for sending long strings of variables.
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">params</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; Variables to be passed to the server wrapped as an object
+	 	 </td></tr></table></p><br/><span class="label"> Example </span><br/><br/><div class="detailBody"> This example loads an image into a movie clip. When the image is clicked, a new URL is loaded in a new browser window.
+<div class="listing"><pre>
+_.to = this;
+_.loadChild("http://www.helpexamples.com/flash/images/image1.jpg")
+    .onClick = function():void {
+        getURL("http://www.adobe.com/software/flash/flashpro/", "_blank");
+    };
+</pre></div><script language="javascript" type="text/javascript"><!-- AC_FL_RunContent( "src", "getURLExample1", "width", "100%",
+					"height","400px", "salign", "TL", "id", "example1", "quality", "high", "bgcolor", "", "name",
+						"example1", "flashvars","", "allowScriptAccess","sameDomain", "type",
+					"application/x-shockwave-flash","pluginspage", "http://www.macromedia.com/go/getflashplayer" ); --></script></div><br/><div class="detailBody"> In the following example, <code>getURL()</code> is used to send an e-mail message:
+<div class="listing"><pre>
+$(myButton).onClick=function(){
+    getURL("mailto:you@somedomain.com");
+};
+</pre></div><script language="javascript" type="text/javascript"><!-- AC_FL_RunContent( "src", "getURLExample2", "width", "100%",
+					"height","400px", "salign", "TL", "id", "example2", "quality", "high", "bgcolor", "", "name",
+						"example2", "flashvars","", "allowScriptAccess","sameDomain", "type",
+					"application/x-shockwave-flash","pluginspage", "http://www.macromedia.com/go/getflashplayer" ); --></script></div><br/><div class="detailBody"> In the following ActionScript, JavaScript is used to open an alert window when the SWF file is embedded in a browser window (please note that when calling JavaScript with getURL(), the url parameter is limited to 508 characters):
+<div class="listing"><pre>
+$(myButton).onClick=function(){
+    getURL("javascript:alert('you clicked me')");
+}
+</pre></div><script language="javascript" type="text/javascript"><!-- AC_FL_RunContent( "src", "getURLExample3", "width", "100%",
+					"height","400px", "salign", "TL", "id", "example3", "quality", "high", "bgcolor", "", "name",
+						"example3", "flashvars","", "allowScriptAccess","sameDomain", "type",
+					"application/x-shockwave-flash","pluginspage", "http://www.macromedia.com/go/getflashplayer" ); --></script></div><br/><div class="detailBody"> You can also use <code>GET</code> or <code>POST</code> for sending variables. The following example uses <code>GET</code> to append variables to a URL:
+<div class="listing"><pre>
+$(myButton).onClick=function(){
+    getURL("http://www.adobe.com", "_blank", "GET", 
+        {firstName: "Gus", lastName: "Richardson", age: 92});
+}
+</pre></div><script language="javascript" type="text/javascript"><!-- AC_FL_RunContent( "src", "getURLExample4", "width", "100%",
+					"height","400px", "salign", "TL", "id", "example4", "quality", "high", "bgcolor", "", "name",
+						"example4", "flashvars","", "allowScriptAccess","sameDomain", "type",
+					"application/x-shockwave-flash","pluginspage", "http://www.macromedia.com/go/getflashplayer" ); --></script></div><br/><div class="detailBody"> The following ActionScript uses <code>POST</code> to send variables in the HTTP header. Make sure you test your documents in a browser window, because otherwise your variables are sent using <code>GET</code>: 
+<div class="listing"><pre>
+$(myButton).onClick=function(){
+    getURL("http://www.adobe.com", "_blank", "POST", 
+        {firstName: "Gus", lastName: "Richardson", age: 92});
+}
+</pre></div><script language="javascript" type="text/javascript"><!-- AC_FL_RunContent( "src", "getURLExample5", "width", "100%",
+					"height","400px", "salign", "TL", "id", "example5", "quality", "high", "bgcolor", "", "name",
+						"example5", "flashvars","", "allowScriptAccess","sameDomain", "type",
+					"application/x-shockwave-flash","pluginspage", "http://www.macromedia.com/go/getflashplayer" ); --></script></div></div><p></p><center class="copyright"><footer>© 2010 - Luracast</footer><br/> </center></div></body></html>
