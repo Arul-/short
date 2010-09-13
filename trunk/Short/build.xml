@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<project name="Short" default="main" basedir=".">
+	<property name="FLEX_HOME" location="${ant.home}../../../sdks/4.1.0" />
+	<target name="main" depends="clean, compile, doc" description="Clean build of SWC">
+	</target>
+	<target name="clean" depends="clean-temp-docs">
+		<delete failonerror="false">
+			<fileset dir="${basedir}/bin">
+				<include name="${ant.project.name}.swc" />
+			</fileset>
+		</delete>
+	</target>
+	<target name="compile" depends="" description="Compile SWC">
+		<echo message="Compiling ${ant.project.name}.swc" />
+		<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar" />
+		<compc fork="true" output="${basedir}/bin/${ant.project.name}.swc">
+			<source-path path-element="${basedir}/src" />
+			<include-sources dir="${basedir}/src" includes="**/*.as **/*.mxml" />
+		</compc>
+	</target>
+	<target name="doc" depends="clean-temp-docs, compile" description="Updates SWC with ASDoc XML">
+		<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar" />
+		<echo message="Compiling ASDoc for ${ant.project.name}.swc" />
+		<!-- Call asdoc to generate dita xml files -->
+		<!-- templates-path="${basedir}/asdoc-templates" -->
+		<asdoc examples-path="${basedir}/examples" 
+			output="${basedir}/docs" lenient="true"
+			main-title="Luracast Short - API Documentation"
+			window-title="Luracast Short"
+			footer="© 2010 - Luracast" date-in-footer="false"
+			failonerror="true" use-network="true" keep-xml="true" skip-xsl="false" fork="true">
+			<compiler.source-path path-element="${basedir}/src" />
+			<doc-sources path-element="${basedir}/src" />
+		</asdoc>
+		<!-- overwrite asdoc folder with modified files -->
+		<copy todir="${basedir}/docs" failonerror="false" overwrite="true">
+			<fileset dir="${basedir}/asdoc-overwrite"/>
+		</copy>
+		<!-- updates ExampleFatSWC.swc with asdoc xml -->
+		<zip destfile="${basedir}/bin/${ant.project.name}.swc" update="true">
+			<zipfileset dir="${basedir}/docs/tempdita" prefix="docs">
+				<include name="*.*" />
+				<exclude name="ASDoc_Config.xml" />
+				<exclude name="overviews.xml" />
+			</zipfileset>
+		</zip>
+		<!-- remove the temp folder -->
+		<delete dir="${basedir}/docs/tempdita" failonerror="false" includeEmptyDirs="true" />
+		<delete file="${basedir}/docs/toplevel.xml" failonerror="false"/>
+	</target>
+	<target name="clean-temp-docs">
+		<delete dir="${basedir}/docs" failonerror="false">
+			<exclude name="**/.svn"/>
+			<exclude name="**/.svn/**"/>
+			<include name="**/images/*.gif"/>
+			<include name="**/images/*.jpg"/>
+			<include name="**/images/*.png"/>
+			<include name="**/*.html"/>
+			<include name="**/*js"/>
+			<include name="**/*css"/>
+		</delete>
+	</target>
+</project>
