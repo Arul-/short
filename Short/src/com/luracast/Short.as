@@ -21,17 +21,13 @@
    THE SOFTWARE.
  */
 package com.luracast {
-    import flash.display.DisplayObject;
     import flash.display.DisplayObjectContainer;
     import flash.display.Loader;
     import flash.display.LoaderInfo;
-    import flash.display.Sprite;
     import flash.events.Event;
     import flash.events.EventDispatcher;
-    import flash.events.IEventDispatcher;
     import flash.net.URLRequest;
     import flash.net.URLVariables;
-    import flash.system.LoaderContext;
     import flash.utils.Dictionary;
     import flash.utils.Proxy;
     import flash.utils.describeType;
