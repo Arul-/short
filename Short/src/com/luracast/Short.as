@@ -116,9 +116,9 @@ package com.luracast
 		/**
 		 * Listens to all events of the target object and traces the event details when the event occurs. 
 		 * We can filter away events that we dont want to listen to using the regular expression parameters
-		 * @param excludeMatching when specified it is used to exclude any matching event name from listening to for example /frame/i
+		 * @param excludeMatching when specified it is used to exclude any matching event name from listening to. For example /frame/i
 		 * will ignore all events that contain 'frame' in their name (onEnterFrame, onExitFrame etc,.)
-		 * @param includeMatching used to inlcude only the matching event names when specified. for example /mouse/i
+		 * @param includeMatching used to inlcude only the matching event names when specified. For example /mouse/i
 		 * will only listen to mouse events (onMouseDown, onMouseUp etc,.)
 		 */
 		public function traceAllEvents(excludeMatching:RegExp=null, includeMatching:RegExp=null):void
