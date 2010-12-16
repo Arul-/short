@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<flexLibProperties includeAllClasses="true" version="3">
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
   <includeClasses>
     <classEntry path="com.luracast.Short"/>
     <classEntry path="com.luracast.VirtualProperty"/>
     <classEntry path="$"/>
+    <classEntry path="com.luracast.TemplateEngine"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <project name="Short" default="main" basedir=".">
-	<property name="FLEX_HOME" location="${ant.home}../../../sdks/4.1.0" />
+	<property name="FLEX_HOME" location="${ant.home}../../../../sdks/4.5.0" />
 	<target name="main" depends="clean, compile, doc" description="Clean build of SWC">
 	</target>
 	<target name="clean" depends="clean-temp-docs">
+		<echo message="${FLEX_HOME}/ant/lib/flexTasks.jar"></echo>
 		<delete failonerror="false">
 			<fileset dir="${basedir}/bin">
 				<include name="${ant.project.name}.swc" />
