@@ -124,6 +124,8 @@ package com.luracast
 		public function traceAllEvents(excludeMatching:RegExp=null, includeMatching:RegExp=null):void
 		{
 			var arr:Array=listAllEventsFor(_scope);
+			//var name:String = 's';//_scope.hasOwnProperty('name') && _scope['name']!=null ? _scope['name'] : 'this'
+			var r:Array = [];
 			for (var i:int=0; i < arr.length; i++)
 			{
 				var s:String=arr[i];
@@ -137,14 +139,12 @@ package com.luracast
 					//trace('including', s)
 					continue;
 				}
-				this[s]=function(e:Event):void
-				{
-					var name:String = e.target.hasOwnProperty('name') ? e.target.name : 'unnamed';
-					trace('(' + getQualifiedClassName(e.target).split(':').pop() + ') ' + name + '.on' + e.type.charAt(0).toUpperCase() + e.type.substr(1), e);
-					//var x:* = describeType(e)//..accessor.@name;
-					//trace(x);
-				}
+				r.push('s.'+s+'=');
+				this[s]=eventTracer;
 			}
+			trace('//expanded version')
+			trace('var s:Short = $(this);')
+			trace(r.join(''),'eventTracer;');
 		}
 
 		/**
